@@ -1,0 +1,14 @@
+﻿services:
+  db:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: freshwave
+      POSTGRES_PASSWORD: freshwave_dev_only
+      POSTGRES_DB: freshwave
+    ports:
+      - "5432:5432"
+    volumes:
+      - freshwave_pgdata:/var/lib/postgresql/data
+volumes:
+  freshwave_pgdata:

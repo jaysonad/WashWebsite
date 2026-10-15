@@ -1,0 +1,19 @@
+﻿{
+  "name": "freshwave-laundry",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "start": "node server.js", "admin:set-password": "node scripts/set-admin-password.js", "db:setup": "node scripts/setup-db.js" },
+  "engines": { "node": ">=22" },
+  "dependencies": {
+    "connect-pg-simple": "^10.0.0",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "express-session": "^1.18.1",
+    "helmet": "^8.1.0",
+    "pg": "^8.16.3",
+    "stripe": "^18.5.0"
+  }
+}
+
